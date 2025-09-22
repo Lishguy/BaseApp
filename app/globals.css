@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes pulse-ring {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    70% {
+      transform: translate(-50%, -50%) scale(1.8);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  .animate-pulse-ring {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .animate-pulse-ring::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%; /* Slightly bigger than button */
+    height: 120%;
+    border-radius: 9999px;
+    background-color: rgba(59, 130, 246, 0.4);
+    transform: translate(-50%, -50%) scale(1);
+    animation: pulse-ring 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    z-index: 0;
+  }
+
+   @keyframes rotate-bounce {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg); /* ✅ Rotate clockwise */
+    }
+    100% {
+      transform: rotate(0deg); /* ✅ Rotate back to start (anticlockwise) */
+    }
+  }
+
+  /* ✅ Utility class for infinite animation */
+  .animate-rotate-bounce {
+    animation: rotate-bounce 28s ease-in-out infinite;
+  }
+
+  /* ✅ Adjusted to match reference design more closely */
+.clip-path-diagonal {
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+}
+
+}
