@@ -6,7 +6,7 @@ import triangleIcon from '../../../public/images/shape-11.svg'
 import team1 from '../../../public/images/team-01.png'
 import team2 from '../../../public/images/team-02.png'
 import team3 from '../../../public/images/team-03.png'
-import { FaFacebook, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
 import Link from 'next/link'
 
 
@@ -22,7 +22,7 @@ const Team = () => {
 
       {/* Main content */}
       <div className='relative z-20 flex flex-col items-center justify-center mt-10'>
-        <div className='w-full max-w-full md:max-w-[1000px] text-center'>
+        <div className='w-full max-w-full md:max-w-[1000px] text-center' data-aos="fade-down">
           <h1 className='w-full  text-[28px] mt-5 md:mt-0 md:text-[44px] md:mx-auto max-w-full md:max-w-[500px] font-bold'>
             Meet With Our Creative Dedicated Team
           </h1>
@@ -32,7 +32,7 @@ const Team = () => {
         </div>
 
         {/* ✅ Changed cards to a .map() loop for cleaner code */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-20'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-20' data-aos="fade-down">
           {[{ img: team1, name: "Olivia Andrium", role: "Product Manager" },
             { img: team2, name: "Jemse Kemorun", role: "Product Designer" },
             { img: team3, name: "Avi Pestarica", role: "Web Designer" }
@@ -56,13 +56,13 @@ const Team = () => {
                                 transition-transform duration-500 ease-out delay-100'>
                   
                   {/* ✅ Added red bar with rounded edge */}
-                  <span className='absolute top-0 right-0 w-8 h-2 bg-[#FF4D67] rounded-bl-lg'></span>
+                  <span className='absolute top-0 right-0 w-8 h-2 bg-[#ff6980e8] rounded-bl-lg'></span>
 
                   {/* Social icons */}
                   <div className='flex justify-center items-center pt-10 gap-6 py-4 text-white'>
-                    <Link href={'/'}><FaFacebook className='cursor-pointer hover:text-[#FF4D67]' size={20} /></Link>
-                    <Link href={'/'}><FaTwitter className='cursor-pointer hover:text-[#FF4D67]' size={20} /></Link>
-                    <Link href={'/'}><FaLinkedinIn className='cursor-pointer hover:text-[#FF4D67]' size={20}/></Link>
+                    <Link href={'/'}><FaFacebookF className='cursor-pointer hover:text-[#ff7287e8]' size={17} /></Link>
+                    <Link href={'/'}><FaTwitter className='cursor-pointer hover:text-[#ff7287e8]' size={17} /></Link>
+                    <Link href={'/'}><FaLinkedinIn className='cursor-pointer hover:text-[#ff7287e8]' size={17}/></Link>
                   </div>
                 </div>
               </div>

@@ -15,7 +15,7 @@ const Stat = () => {
        <Image src={spiral} alt='circle' className='absolute flex md:w-16 z-10' />
 
       {/* main content  */}
-      <div className='relative grid grid-cols-2 md:grid-cols-4 mx-auto w-full max-w-full md:max-w-[1200px] gap-6 md:gap-8 items-center pt-26 pb-26'>
+      <div className='relative grid grid-cols-2 md:grid-cols-4 mx-auto w-full max-w-full md:max-w-[1200px] gap-6 md:gap-8 items-center pt-26 pb-26' data-aos="fade-down" data-aos-duration="1200">
         {/* card 1  */}
         <div className='flex flex-col text-center'>
           <h1 className=' text-4xl md:text-[44px] xl:text-6xl font-bold'>785</h1>

@@ -6,9 +6,9 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <div className='px-10 mt-10 '>
+    <div className='px-10 mt-10'>
     <div className='grid grid-cols-1 md:grid-cols-[25%_15%_15%_15%_25%] gap-6 mb-28'>
-      <div className='flex flex-col max-w-[300px]'>
+      <div className='flex flex-col max-w-[300px]' data-aos="fade-down" >
         <Image src={LogoLight} alt='Logo Light' />
         <p className='mt-5 text-gray-500/90 mb-10 text-[17px]'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
 
       {/* Quick Link  */}
-      <div className='flex flex-col'>
+      <div className='flex flex-col' data-aos="fade-down" data-aos-duration="1100">
         <h1 className='text-[22px] font-medium'>
           Quick Links
         </h1>
@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
 
         {/* Services  */}
-      <div className='flex flex-col'>
+      <div className='flex flex-col' data-aos="fade-down" data-aos-duration="1200">
         <h1 className='text-[22px] font-medium'>
           Services
         </h1>
@@ -79,8 +79,8 @@ const Footer = () => {
       </div>
 
 
-        {/* Services  */}
-      <div className='flex flex-col'>
+        {/* Support  */}
+      <div className='flex flex-col' data-aos="fade-down" data-aos-duration="1300">
         <h1 className='text-[22px] font-medium'>
           Support
         </h1>
@@ -105,8 +105,8 @@ const Footer = () => {
         
       </div>
 
-        {/* Services  */}
-      <div className='flex flex-col'>
+        {/* NewsLetter  */}
+      <div className='flex flex-col' data-aos="fade-down" data-aos-duration="1400">
         <h1 className='text-[22px] font-medium'>
           Newsletter
         </h1>
@@ -142,7 +142,7 @@ const Footer = () => {
       </div>
 
       {/* right content  */}
-      <div className='text-[16px] mt-5 md:mt-0' >
+      <div className='text-[16px] mt-5 md:mt-0'  >
         © 2025 Base. All rights reserved
       </div>
 

@@ -1,44 +1,51 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/context/ThemeContext";
 import ResponsiveNav from "@/Components/HomePage/Navbar/ResponsiveNav";
-import Footer from '../Components/HomePage/Footer/Footer'
-import favicon from '../public/images/logo-light.svg'
+import Footer from "../Components/HomePage/Footer/Footer";
+import AosProvider from "@/Components/AosProvider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const roboto = Roboto({
+  weight: ['400', '500', '600', '700'],
+  variable: "--font-roboto",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "BaseApp",
   description: "BaseApp || NextJs",
   icons: {
-    icon: "/images/logo-light.svg",         // used as favicon
+    icon: "/images/logo-light.svg", // ✅ favicon works here
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-black`} 
+        className={`${roboto.className} antialiased bg-white dark:bg-black flex flex-col min-h-screen`}
       >
-        <ThemeProvider>
-          <ResponsiveNav />
-          {children}
-          <Footer />
-        </ThemeProvider>        
+        {/* ✅ Wrap everything in a client AOS provider */}
+        <AosProvider>
+          <ThemeProvider>
+            <ResponsiveNav />
+            <main className="flex-grow">
+              {children}
+            </main>
+            <Footer />
+          </ThemeProvider>
+        </AosProvider>
       </body>
     </html>
   );

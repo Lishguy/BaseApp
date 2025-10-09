@@ -18,7 +18,7 @@ const Price = () => {
   }
 
   return (
-    <div className='relative w-full pt-0 md:pt-22 pb-10 md:pb-18 mb-20 md:mb-16  bg-gray-100/80'>
+    <div className='relative w-full pt-0 md:pt-22 pb-10 md:pb-20 mb-20 md:mb-16  bg-gray-100/80'>
            {/* spiral image */}
               {/* bottom spiral  */}
               <Image src={Spiral1} className='absolute hidden md:flex left-0 mt-[-88px] z-0' alt='spiral image' />
@@ -31,7 +31,7 @@ const Price = () => {
         
               {/* Main content */}
               <div className='relative z-20 flex flex-col items-center justify-center mt-10'>
-                <div className='w-full max-w-full  text-center'>
+                <div className='w-full max-w-full  text-center' data-aos="fade-down" data-aos-duration="1200">
                   <h1 className='w-full text-[26px] mt-5 md:mt-0 md:text-[44px] md:mx-auto max-w-full md:max-w-[550px] font-medium md:font-bold'>
                     We Offer Great Affordable Premium Prices.
                   </h1>
@@ -49,11 +49,11 @@ const Price = () => {
                     {/* Toggle Button */}
                     <button
                       onClick={() => setIsAnnual(!isAnnual)}
-                      className='relative w-12 h-6 flex items-center rounded-full p-1 transition-colors duration-300 bg-blue-600 cursor-pointer'
+                      className='relative w-11 h-6 flex items-center rounded-full p-1 transition-colors duration-300 bg-blue-600/80 cursor-pointer'
                     >
                       <span
                         className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-transform duration-300 ${
-                          isAnnual ? "translate-x-6" : "translate-x-0"
+                          isAnnual ? "translate-x-5" : "translate-x-0"
                         }`}
                       ></span>
                     </button>
@@ -66,14 +66,14 @@ const Price = () => {
                 </div> 
             </div>
 
-            <div className='relative z-10 max-w-full mx-10 md:mx-20 mt-20'>
+            <div className='relative z-10 max-w-full mx-10 md:mx-20 mt-20' data-aos="fade-down" data-aos-duration="1400">
             {/* Price List  */}
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
                   {/* card 1  */}
                   <div className='bg-white items-center justify-center text-center py-6  rounded-lg'>
-                    <h2 className='text-2xl font-medium mt-2 mb-8 text-black/80'>Starter</h2>
+                    <h2 className='text-xl font-light mt-2 mb-8 text-black'>Starter</h2>
                     <div className='flex items-center justify-center text-center '>
-                      <h1 className=' text-[36px] md:text-[44px] font-bold pr-1'>
+                      <h1 className=' text-[36px] md:text-[40px] font-bold pr-1 text-black/80'>
                         ${isAnnual ? prices.annual[0] : prices.monthly[0]} {/* ✅ price switches here */}
                       </h1>
                       <span className='text-[15px]'>{isAnnual ? "/per year" : "/per month"}</span>
@@ -90,9 +90,9 @@ const Price = () => {
 
                 {/* card 2  */}
                    <div className='bg-white items-center justify-center text-center py-6  rounded-lg'>
-                    <h2 className='text-2xl font-medium mt-2 mb-8 text-black/80'>Starter</h2>
+                    <h2 className='text-xl font-light mt-2 mb-8 text-black/80'>Growth Plan</h2>
                     <div className='flex items-center justify-center text-center '>
-                      <h1 className='text-[36px] md:text-[44px]x] font-bold pr-1'>
+                      <h1 className='text-[36px] md:text-[40px] font-bold pr-1 text-black/80'>
                         ${isAnnual ? prices.annual[1] : prices.monthly[1]} {/* ✅ price switches here */}
                       </h1>
                       <span className='text-[15px]'>{isAnnual ? "/per year" : "/per month"}</span>
@@ -109,9 +109,9 @@ const Price = () => {
 
                   {/* card 3  */}
                   <div className='bg-white items-center justify-center text-center py-6  rounded-lg'>
-                    <h2 className='text-2xl font-medium mt-2 mb-8 text-black/80'>Starter</h2>
+                    <h2 className='text-xl font-light mt-2 mb-8 text-black/80'>Business</h2>
                     <div className='flex items-center justify-center text-center '>
-                      <h1 className='text-[36px] md:text-[44px] font-bold pr-1'>
+                      <h1 className='text-[36px] md:text-[40px] font-bold pr-1 text-black/80'>
                         ${isAnnual ? prices.annual[2] : prices.monthly[2]} {/* ✅ price switches here */}
                       </h1>
                       <span className='text-[15px]'>{isAnnual ? "/per year" : "/per month"}</span>

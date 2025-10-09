@@ -21,7 +21,7 @@ const Connected = () => {
       
             {/* Main content */}
             <div className='relative z-20 flex flex-col items-center justify-center mt-10'>
-              <div className='w-full max-w-full md:max-w-[1000px] text-center'>
+              <div className='w-full max-w-full md:max-w-[1000px] text-center' data-aos="fade-down" data-aos-duration="1200">
                 <h1 className='w-full  text-[32px] mt-16 md:mt-0 md:text-[44px] md:mx-auto max-w-full md:max-w-[500px] font-bold'>
                   Let’s Stay Connected
                 </h1>
@@ -32,7 +32,7 @@ const Connected = () => {
 
               <div className='grid grid-cols-1 md:grid-cols-[30%_70%] gap-8 w-full pr-5 md:pr-16 pl-5 md:pl-8 mt-20'>
                 {/* Form Left  */}
-                <div className=' bg-white rounded-lg px-6 py-6 order-2 md:order-1'>
+                <div className=' bg-white rounded-lg px-6 py-6 order-2 md:order-1' data-aos="fade-left" data-aos-duration="1500">
                   <div className='justify-end flex items-center'>
                     <Image src={smallSpiral} className='w-8 ' alt='Small Spirral' />
                   </div>
@@ -94,7 +94,7 @@ const Connected = () => {
 
               {/* Form Right  */}
                
-              <div className="bg-white rounded-lg px-6 md:px-16 py-10 md:py-16 order-1 md:order-2">
+              <div className="bg-white rounded-lg px-6 md:px-16 py-10 md:py-16 order-1 md:order-2" data-aos="fade-right" data-aos-duration="1500">
                 {/* ✅ FIXED: proper grid classes for small and md screens */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="flex flex-col">
@@ -164,7 +164,7 @@ const Connected = () => {
       <div className='bg-blue-600/90 w-full py-20 px-6'>
         <div className='grid grid-cols-1 md:grid-cols-2 items-center'>
           {/* Left content  */}
-          <div className='flex flex-col gap-4'>
+          <div className='flex flex-col gap-4' data-aos="fade-left" data-aos-duration="1400">
             <h1 className='text-3xl md:text-[40px] xl:text-[45px] font-bold text-white leading-snug'>
               Join with 5000+ Startups Growing with Base.
             </h1>
@@ -174,7 +174,7 @@ const Connected = () => {
           </div>
 
           {/* button  */}
-          <div className='flex md:justify-end mt-10 md:mt-0 '>
+          <div className='flex md:justify-end mt-10 md:mt-0 ' data-aos="fade-right" data-aos-duration="1500">
             <button className='bg-white text-black px-8 py-3 rounded-full text-lg font-medium hover:shadow-md cursor-pointer transition-transform'>
               Get started Now
             </button>

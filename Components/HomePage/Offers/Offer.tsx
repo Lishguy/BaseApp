@@ -6,8 +6,8 @@ const Offer = () => {
   return (
     <div className='px-4 md:px-9 w-full pt-10 md:pt-22 pb-20'>
 
-      <div className='flex flex-col items-center justify-center mt-10'>
-        <div className='w-full max-w-full md:max-w-[1000px] text-center'>
+      <div className='flex flex-col items-center justify-center mt-10' >
+        <div className='w-full max-w-full md:max-w-[1000px] text-center' data-aos="fade-down">
           <h1 className='w-full text-[28px] md:text-[31px] mt-5 md:mt-0 md:mx-auto max-w-full md:max-w-[500px] font-bold'>
             We Offer The Best Quality Service for You
           </h1>
@@ -17,7 +17,7 @@ const Offer = () => {
         </div>
 
         {/* Cards  */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10  w-full mt-16 px-0 sm:px-8 md:px-0 '>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10  w-full mt-16 px-0 sm:px-8 md:px-0 ' data-aos="fade-down" data-aos-duration="1400">
           {OfferList.map((offer)=>(
             <div key={offer.id} 
               className='flex flex-col p-10  mx-0 md:mx-5 rounded-xl bg-white  hover:shadow-xl transition-shadow duration-300 ease-out cursor-pointer'>

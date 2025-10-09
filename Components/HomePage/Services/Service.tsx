@@ -14,7 +14,7 @@ const Service = () => {
     <div className='px-4 md:px-9 w-full pt-0 md:pt-22 pb-20'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10 items-center'>
         {/* Left Content  */}
-        <div className='hidden md:flex gap-10'>
+        <div className='hidden md:flex gap-10' data-aos="fade-left">
             {/* Content 1  */}
             <div className='flex flex-col gap-6'>
                 <Image src={About1} className='' alt=''/>
@@ -32,7 +32,7 @@ const Service = () => {
         </div>
 
         {/* Right Content  */}
-        <div className='flex flex-col ml-5 mr-5 md:mr-0 md:ml-[60px]'>
+        <div className='flex flex-col ml-5 mr-5 md:mr-0 md:ml-[60px]' data-aos="fade-right">
             <h2 className='text-lg text-blue-600 font-medium mb-4'>Why Choose Us</h2>
             <h1 className=' text-3xl md:text-[38px] leading-12 font-bold mb-5'>We Make Our customers happy by giving Best services.</h1>
             <p className='text-gray-400 text-md mb-8'>

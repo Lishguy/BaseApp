@@ -6,6 +6,7 @@ import project1 from '../../../public/images/project-01.png'
 import project2 from '../../../public/images/project-02.png'
 import project3 from '../../../public/images/project-03.png'
 import project4 from '../../../public/images/project-04.png'
+import Link from 'next/link'
 
 /* ------------------------
    ImageCard Component
@@ -41,9 +42,12 @@ const ImageCard = ({ src, title = '', subtitle = '', heightClass = 'h-48 md:h-60
             aria-label="Open"
             className="mt-4 w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <Link href='/'>
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
+            </Link>
+            
           </button>
         </div>
       </div>
@@ -97,7 +101,7 @@ const PremiumPrice = () => {
   return (
     <div className='relative w-full pt-0 md:pt-10 pb-10 md:pb-18 mb-20 md:mb-16'>
       <div className='relative z-20 flex flex-col items-center justify-center mt-10'>
-        <div className='w-full max-w-full text-center'>
+        <div className='w-full max-w-full text-center' data-aos="fade-down" data-aos-duration="1200">
           <h1 className='w-full text-[30px] mt-5 md:mt-0 md:text-[44px] md:mx-auto max-w-full md:max-w-[550px] font-medium md:font-bold'>
             We Offer Great Affordable Premium Prices.
           </h1>
@@ -106,7 +110,7 @@ const PremiumPrice = () => {
           </p>
 
           {/* ButtonsList */}
-          <div className="bg-white rounded-full shadow-md flex flex-wrap justify-center items-center gap-4 mx-auto mt-10 px-4 py-2 max-w-fit">
+          <div className="bg-white rounded-full shadow-md flex flex-wrap justify-center items-center gap-4 mx-auto mt-10 px-4 py-2 max-w-fit" data-aos="fade-down" data-aos-duration="1400">
             {buttons.map((btn) => (
               <button
                 key={btn}
@@ -125,9 +129,9 @@ const PremiumPrice = () => {
           {/* Image grid */}
           {active === "All" ? (
             // ✅ Keep your special 70/30 layout
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[70%_30%] gap-8 mt-20 mx-4 md:mx-10'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[70%_30%] gap-8 mt-20 mx-4 md:mx-10' >
               {/* Left column */}
-              <div className='flex flex-col'>
+              <div className='flex flex-col' data-aos="fade-down" data-aos-duration="1500">
                 <div className='flex flex-col md:flex-row gap-6 mb-6'>
                   <div className='flex-1'>
                     <ImageCard src={project1} title="Photo Retouching" subtitle="Branded Ecommerce" />
@@ -142,7 +146,7 @@ const PremiumPrice = () => {
               </div>
 
               {/* Right column */}
-              <div>
+              <div data-aos="fade-down" data-aos-duration="1600">
                 <ImageCard src={project4} title="Marketing Ideas" subtitle="Ecommerce" heightClass="h-96 md:h-[520px]" />
               </div>
             </div>

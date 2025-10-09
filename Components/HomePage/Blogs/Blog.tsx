@@ -5,12 +5,13 @@ import Blog3 from '../../../public/images/blog-03.png'
 import iconMan from '../../../public/images/icon-man.svg'
 import iconCal from '../../../public/images/icon-calender.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Blog = () => {
   return (
     <div className="relative w-full pt-0 md:pt-3 pb-10 md:pb-18 mb-20 md:mb-18">
       <div className="relative z-20 flex flex-col items-center justify-center mt-10">
-        <div className="w-full max-w-full text-center">
+        <div className="w-full max-w-full text-center" data-aos="fade-down" data-aos-duration="1300">
           <h1 className="w-full text-[30px] mt-5 md:mt-0 md:text-[44px] md:mx-auto max-w-full md:max-w-[550px] font-medium md:font-bold">
             Latest Blogs & News
           </h1>
@@ -23,7 +24,7 @@ const Blog = () => {
       </div>
 
       {/* Blog Content */}
-      <div className="w-full gap-10 grid grid-cols-1 md:grid-cols-3 mt-20 px-10 md:px-0">
+      <div className="w-full gap-10 grid grid-cols-1 md:grid-cols-3 mt-20 px-10 md:px-0" data-aos="fade-down" data-aos-duration="1500">
         {[Blog1, Blog2, Blog3].map((blog, index) => (
           <div
             key={index}
@@ -46,7 +47,7 @@ const Blog = () => {
                 transition-all duration-500 ease-in-out"
               >
                 <button className="bg-blue-600 text-white text-lg px-8 py-3 rounded-full shadow-md hover:bg-[#fd035f94] transition">
-                  Read More
+                  <Link href='/pages/blog-single'>Read More</Link>
                 </button>
               </div>
             </div>

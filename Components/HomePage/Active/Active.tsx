@@ -6,7 +6,7 @@ import Active3 from '../../../public/images/Active3.png'
 
 const Active = () => {
   return (
-    <div className='px-4 md:px-9 w-full pt-0 md:pt-22 pb-20'>
+    <div className='px-4 md:px-9 w-full pt-0 md:pt-22 pb-20' data-aos="fade-down">
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14'>
             {/* Active 1  */}
                 <div className='flex flex-row justify-normal md:justify-between items-center gap-4 md:gap-6'>

@@ -11,7 +11,8 @@ const Hero = () => {
       
       <div className="px-4 md:px-9 mx-auto items-center grid grid-cols-1 md:grid-cols-2 gap-10 relative z-10">
         {/* Left Content */}
-        <div>
+        <div data-aos='fade-left'>
+          
           <h1 className="text-[27px] md:text-4xl  font-bold text-gray-900 leading-tight">
             We specialize in UI/UX, Web Development, Digital Marketing.
           </h1>
@@ -34,7 +35,7 @@ const Hero = () => {
         </div>
 
         {/* Right Content (Hero Image) */}
-        <div className="relative w-full hidden md:flex justify-center md:justify-end mt-10 md:mt-0">
+        <div className="relative w-full hidden md:flex justify-center md:justify-end mt-10 md:mt-0" data-aos="zoom-in">
           <div className="relative overflow-hidden ">
             <Image
               src={HeroImg}

@@ -54,9 +54,9 @@ const Testimonial = () => {
   return (
     <div className="relative w-full pt-0 md:pt-3 pb-10 md:pb-18 mb-20 md:mb-18">
       <div className="relative z-20 flex flex-col items-center justify-center mt-10">
-        <div className="w-full max-w-full text-center">
+        <div className="w-full max-w-full text-center" data-aos="fade-down" data-aos-duration="1200">
           <h1 className="w-full text-[30px] mt-5 md:mt-0 md:text-[44px] md:mx-auto max-w-full md:max-w-[550px] font-medium md:font-bold">
-            Client’s Testimonials.
+            Client’s Testimonials
           </h1>
           <p className="w-full mt-5 max-w-full md:max-w-[600px] mx-auto text-gray-500 text-[18px] md:text-[18px]">
             It is a long established fact that a reader will be distracted by
@@ -66,7 +66,7 @@ const Testimonial = () => {
         </div>
 
         {/* ✅ Testimonial Card with right color split */}
-        <div className="relative max-w-[1000px] mt-10">
+        <div className="relative max-w-[1000px] mt-10" data-aos="fade-down" data-aos-duration="1400">
           <div className="grid grid-cols-1 md:grid-cols-[30%_70%] gap-6 bg-white shadow-md rounded-xl p-8 relative overflow-hidden">
             {/* ✅ Right border with blue top and red bottom */}
             <div className="absolute top-0 right-0 w-[8px] h-full flex flex-col">
@@ -85,7 +85,7 @@ const Testimonial = () => {
 
             {/* ✅ Client Testimonial */}
             <div className="flex flex-col justify-between px-5">
-              <BiSolidQuoteAltLeft className='text-gray-300' size={60} />
+              <BiSolidQuoteAltLeft className='text-gray-200' size={50} />
               <p className="text-gray-400 italic font-medium text-xl md:text-[26px] text-left mb-3 mt-3">
                 {current.text}
               </p>
@@ -105,7 +105,7 @@ const Testimonial = () => {
         </div>
 
         {/* ✅ Navigation Buttons with React Icons + hover effect */}
-        <div className="flex gap-4 mt-6">
+        <div className="flex gap-4 mt-6" data-aos="fade-down" data-aos-duration="1500">
           <button
             onClick={handlePrev}
             className="p-3 rounded-full border border-gray-300 text-gray-400 hover:bg-blue-600 hover:text-white transition"
