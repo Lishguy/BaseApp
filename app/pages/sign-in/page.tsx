@@ -123,7 +123,7 @@ const Signin = () => {
               Sign In
             </button>
             <p className='items-center text-center mt-6 text-[18px] text-gray-500/80'>
-              Don't have an account? <Link href='/pages/sign-up' className='text-blue-600 text-[18px]'>Sign Up</Link>
+              Do not have an account?<Link href='/pages/sign-up' className='text-blue-600 text-[18px]'>Sign Up</Link>
             </p>
           </div>
         </div>
