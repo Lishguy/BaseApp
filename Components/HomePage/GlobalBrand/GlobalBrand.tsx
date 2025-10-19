@@ -15,7 +15,7 @@ const GlobalBrand = () => {
           <h1 className="w-full text-[30px] mt-5 md:mt-0 md:text-[44px] md:mx-auto max-w-full md:max-w-[550px] font-medium md:font-bold">
             Trusted by Global Brands
           </h1>
-          <p className="w-full mt-5 max-w-full md:max-w-[600px] mx-auto text-gray-500 text-[18px] md:text-[18px]">
+          <p className="w-full p-4 md:p-0 mt-5 max-w-full md:max-w-[600px] mx-auto text-gray-500 text-[17px] md:text-[18px]">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using.
@@ -23,7 +23,7 @@ const GlobalBrand = () => {
         </div>
 
         {/* Image content  */}
-        <div className='grid grid-cols-3 md:grid-cols-6 gap-8 md:gap-6 w-full mt-8 items-center ml-20 mr-0 md:mr-10 xl:mr-0 text-gray-300 hover:text-gray-400' data-aos="fade-down" data-aos-duration="1500">
+        <div className='grid grid-cols-3 md:grid-cols-6 gap-8  md:gap-6 w-full mt-12 md:mt-8 items-center px-4 md:px-0 ml-0 md:ml-20 mr-0 md:mr-10 xl:mr-0 text-gray-300 hover:text-gray-400' data-aos="fade-down" data-aos-duration="1500">
           <Image src={brand1}  alt='brand1' />
           <Image src={brand2}  alt='brand2' />
           <Image src={brand3}  alt='brand3' />

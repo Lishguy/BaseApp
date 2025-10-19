@@ -15,7 +15,7 @@ const Blog = () => {
           <h1 className="w-full text-[30px] mt-5 md:mt-0 md:text-[44px] md:mx-auto max-w-full md:max-w-[550px] font-medium md:font-bold">
             Latest Blogs & News
           </h1>
-          <p className="w-full mt-5 max-w-full md:max-w-[600px] mx-auto text-gray-500 text-[18px] md:text-[18px] px-5 md:px-0">
+          <p className="w-full mt-5 max-w-full md:max-w-[600px] mx-auto text-gray-500 text-[17px] md:text-[18px] px-5 md:px-0">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using.
@@ -56,14 +56,14 @@ const Blog = () => {
             <div className="flex gap-6 mx-6 mt-6 items-center">
               <div className="flex gap-2 items-center">
                 <Image src={iconMan} alt="iconMan" />
-                <p className="text-[18px] text-gray-500">Musharof Chy</p>
+                <p className="text-[15px] md:text-[18px] text-gray-500">Musharof Chy</p>
               </div>
               <div className="flex gap-2 items-center">
                 <Image src={iconCal} alt="iconCalender" />
-                <p className="text-[18px] text-gray-500">25 Dec, 2025</p>
+                <p className="text-[15px] md:text-[18px] text-gray-500">25 Dec, 2025</p>
               </div>
             </div>
-            <h1 className="text-[26px] cursor-pointer leading-8 font-medium mx-6 mb-8 mt-6 hover:text-blue-600">
+            <h1 className="text-[23px] md:text-[26px] cursor-pointer leading-8 font-medium mx-6 mb-8 mt-6 hover:text-blue-600">
               {index === 0
                 ? 'Free advertising for your online business'
                 : index === 1

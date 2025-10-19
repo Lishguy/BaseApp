@@ -214,7 +214,7 @@ const Nav = () => {
       {/* MOBILE NAV */}
       {isOpen && (
         <div className="md:hidden mt-4 bg-white shadow-lg p-4">
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 mt-12">
             {NavLinks.map((link) => (
               <li key={link.id}>
                 <Link

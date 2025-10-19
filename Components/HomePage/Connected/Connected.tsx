@@ -15,7 +15,7 @@ const Connected = () => {
             {/* top spiral */}
             <Image src={Spiral2} className='absolute flex mt-0 md:mt-[-88px] ml-0 md:ml-20 xl:ml-64 z-0' alt='spiral image' />
               <div className='relative z-10'>
-                <Image src={halfCircle} alt='circle' className='absolute flex ml-10 md:ml-40 mt-20  md:mt-[-30px] z-10' />
+                <Image src={halfCircle} alt='circle' className='absolute hidden md:flex ml-10 md:ml-40 mt-20  md:mt-[-30px] z-10' />
                 <Image src={smallSpiral} alt='small spiral' className='absolute hidden md:flex ml-[800px] xl:ml-[930px] mt-52 z-10'/>
               </div>
       
@@ -41,25 +41,25 @@ const Connected = () => {
 
                   {/* Email  */}
                   <div className='flex flex-col mb-5'>
-                    <h1 className='text-[22px]'>Email Address</h1>
+                    <h1 className='text-[20px] md:text-[22px]'>Email Address</h1>
                     <p className='text-gray-500/90 text-[17px] mt-1'>support@startup.com</p>
                   </div>
 
                   {/* Location  */}
                   <div className='flex flex-col mb-5'>
-                    <h1 className='text-[22px]'>Office Location</h1>
+                    <h1 className='text-[20px] md:text-[22px]'>Office Location</h1>
                     <p className='text-gray-500/90 text-[17px] mt-1'>76/A, Green valle, Califonia USA.</p>
                   </div> 
 
                   {/* Phone  */}
                   <div className='flex flex-col mb-6'>
-                    <h1 className='text-[21px]'>Phone Number</h1>
+                    <h1 className='text-[20px] md:text-[22px]'>Phone Number</h1>
                     <p className='text-gray-500/90 text-[17px] mt-1'>+234 7045771682</p>
                   </div> 
 
                   {/* Skype Email  */}
                   <div className='flex flex-col '>
-                    <h1 className='text-[21px]'>Skype Email</h1>
+                    <h1 className='text-[20px] md:text-[22px]'>Skype Email</h1>
                     <p className='text-gray-500/90 text-[17px] mt-1'>example@yourmail.com</p>
                   </div> 
                   <hr className='text-gray-300 w-full mt-6' />
